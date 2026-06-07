@@ -8,6 +8,7 @@ interface code.
 | Project | Description |
 | --- | --- |
 | `Linux_Device_Drivers/HD44780_Char_LCD` | Linux character device driver for HD44780-compatible LCD modules over DB-25 parallel-port wiring or a vendor-specific USB bridge |
+| `Linux_Device_Drivers/HD44780_USB_LCD` | USB-first Linux character device driver for HD44780 LCD modules connected through microcontroller bridge firmware |
 
 ## Build Notes
 

@@ -22,3 +22,9 @@ jobs:
           KDIR="$(find /usr/src -maxdepth 1 -type d -name 'linux-headers-*-generic' | sort | tail -n 1)"
           test -n "$KDIR"
           make -C Linux_Device_Drivers/HD44780_Char_LCD KDIR="$KDIR"
+
+      - name: Build HD44780 USB LCD driver
+        run: |
+          KDIR="$(find /usr/src -maxdepth 1 -type d -name 'linux-headers-*-generic' | sort | tail -n 1)"
+          test -n "$KDIR"
+          make -C Linux_Device_Drivers/HD44780_USB_LCD KDIR="$KDIR"
